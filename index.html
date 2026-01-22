@@ -29,9 +29,9 @@
     <div class="noise"></div>
   </div>
 
-  <header class="topbar container">
+  <header class="topbar full"><div class="container topbar-inner">
     <div class="brand">
-      <div class="mark" aria-hidden="true"></div>
+      
       <div class="brandtext">
         <div class="name">Hermon Data</div>
         <div class="tag">Consultoria Salesforce</div>
@@ -39,35 +39,40 @@
     </div>
 
     <nav class="nav">
-      <a href="#servicos">Serviços</a>
-      <a href="#metodo">Método</a>
-      <a href="#contato" class="cta">Falar agora</a>
-    </nav>
-  </header>
+      <a href="#servicos" data-i18n="nav_services">Serviços</a>
+      <a href="#metodo" data-i18n="nav_method">Método</a>
+      <a href="#contato" class="cta" data-i18n="nav_cta">Falar agora</a>
+    
+      <div class="lang">
+        <a class="lang-btn" href="#" id="langPT">PT</a>
+        <a class="lang-btn" href="#" id="langEN">EN</a>
+      </div>
+</nav>
+  </div></header>
 
-  <main>
+  <main class="container">
     <section class="hero container">
       <div class="hero-left">
-        <p class="pill">Entrega rápida • Qualidade enterprise • Governança</p>
+        <p class="pill" data-i18n="pill">Entrega rápida • Qualidade enterprise • Governança</p>
         <h1>
-          Salesforce do <span class="accent">planejamento</span> à <span class="accent">execução</span>,
+          <span data-i18n="h1_line1">Salesforce do <span class="accent">planejamento</span> à <span class="accent">execução</span>,</span>
           com um visual e uma operação à altura do seu negócio.
         </h1>
-        <p class="sub">
+        <p class="sub" data-i18n="hero_sub">
           Implementações, melhorias e sustentação com foco em performance, segurança, automação e dados.
           A Hermon Data integra estratégia, arquitetura e entrega — sem ruído.
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary" href="#contato">Ver contatos com QR</a>
-          <a class="btn ghost" href="#servicos">Explorar serviços</a>
+          <a class="btn primary" href="#contato"><span data-i18n="btn_qr">Ver contatos com QR</span></a>
+          <a class="btn ghost" href="#servicos"><span data-i18n="btn_services">Explorar serviços</span></a>
         </div>
 
         <div class="trust">
           <div class="chip">Admin & Dev</div>
-          <div class="chip">Sales Cloud • Service Cloud</div>
-          <div class="chip">Flows • Apex • LWC</div>
-          <div class="chip">Integrações • APIs</div>
+          <div class="chip" data-i18n="chip_clouds">Sales Cloud • Service Cloud</div>
+          <div class="chip" data-i18n="chip_dev">Flows • Apex • LWC</div>
+          <div class="chip" data-i18n="chip_int">Integrações • APIs</div>
         </div>
       </div>
 
@@ -75,90 +80,100 @@
         <div class="panel">
           <div class="panel-head">
             <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-            <span>Resumo de entrega</span>
+            <span data-i18n="panel_title">Resumo de entrega</span>
           </div>
           <div class="panel-body">
             <div class="kpi">
-              <div class="kpi-label">Lead time</div>
-              <div class="kpi-value">&lt; 2 semanas</div>
-              <div class="kpi-note">para primeiros ganhos</div>
+              <div class="kpi-label" data-i18n="kpi_lead_label">Lead time</div>
+              <div class="kpi-value" data-i18n="kpi_lead_value">&lt; 2 semanas</div>
+              <div class="kpi-note" data-i18n="kpi_lead_note">para primeiros ganhos</div>
             </div>
             <div class="kpi">
-              <div class="kpi-label">Qualidade</div>
-              <div class="kpi-value">padrão enterprise</div>
-              <div class="kpi-note">revisões, testes e docs</div>
+              <div class="kpi-label" data-i18n="kpi_quality_label">Qualidade</div>
+              <div class="kpi-value" data-i18n="kpi_quality_value">padrão enterprise</div>
+              <div class="kpi-note" data-i18n="kpi_quality_note">revisões, testes e docs</div>
             </div>
             <div class="kpi">
-              <div class="kpi-label">Governança</div>
-              <div class="kpi-value">segurança + escala</div>
-              <div class="kpi-note">boas práticas e auditoria</div>
+              <div class="kpi-label" data-i18n="kpi_gov_label" data-i18n="show_k2">Governança</div>
+              <div class="kpi-value" data-i18n="kpi_gov_value">segurança + escala</div>
+              <div class="kpi-note" data-i18n="kpi_gov_note">boas práticas e auditoria</div>
             </div>
             <div class="divider"></div>
             <div class="mini">
-              <div class="mini-title">O que você recebe</div>
+              <div class="mini-title" data-i18n="mini_title">O que você recebe</div>
               <ul>
-                <li>Arquitetura + backlog priorizado</li>
-                <li>Entrega incremental (sprints)</li>
-                <li>Documentação e handover</li>
-                <li>Monitoramento e melhoria contínua</li>
+                <li data-i18n="mini_li1">Arquitetura + backlog priorizado</li>
+                <li data-i18n="mini_li2">Entrega incremental (sprints)</li>
+                <li data-i18n="mini_li3">Documentação e handover</li>
+                <li data-i18n="mini_li4">Monitoramento e melhoria contínua</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="mountain" aria-hidden="true">
-          <svg viewBox="0 0 600 300" role="img" aria-label="">
-            <path d="M20,260 L210,70 L290,150 L360,90 L580,260 Z" />
-            <path class="line" d="M210,70 L290,150 L360,90" />
-          </svg>
-        </div>
+        
+<div class="showcase" aria-hidden="true">
+  <div class="showcase-inner">
+    
+    <div class="showcase-text">
+      <div class="showcase-title" data-i18n="show_title">Elevating Solutions</div>
+      <div class="showcase-sub" data-i18n="show_sub">Arquitetura • Entrega • Sustentação</div>
+    </div>
+  </div>
+  <div class="showcase-grid">
+    <div class="show-item"><div class="k" data-i18n="show_k1">Entrega</div><div class="v" data-i18n="show_v1">Sprints com valor</div></div>
+    <div class="show-item"><div class="k" data-i18n="show_k2">Governança</div><div class="v" data-i18n="show_v2">Padrões e segurança</div></div>
+    <div class="show-item"><div class="k" data-i18n="show_k3">Dados</div><div class="v" data-i18n="show_v3">Integrações e qualidade</div></div>
+  </div>
+</div>
+
       </div>
     </section>
 
     <section id="servicos" class="section container">
       <div class="section-head">
-        <h2>Serviços</h2>
-        <p>Escolha o que faz sentido agora. Nós estruturamos para evoluir sem refazer tudo depois.</p>
+        <h2 data-i18n="sec_services_title">Serviços</h2>
+        <p data-i18n="sec_services_desc">Escolha o que faz sentido agora. Nós estruturamos para evoluir sem refazer tudo depois.</p>
       </div>
 
       <div class="grid">
-        <article class="card">
-          <h3>Implementação & Setup</h3>
-          <p>Do zero ao go-live: objetos, permissões, automações, pipelines e validações.</p>
+        <article class="card" data-animate>
+          <h3 data-i18n="svc1_title">Implementação & Setup</h3>
+          <p data-i18n="svc1_desc">Do zero ao go-live: objetos, permissões, automações, pipelines e validações.</p>
           <ul>
-            <li>Sales / Service Cloud</li>
-            <li>Perfis, Permission Sets, Sharing</li>
-            <li>Modelo de dados e governança</li>
+            <li data-i18n="svc1_li1">Sales / Service Cloud</li>
+            <li data-i18n="svc1_li2">Perfis, Permission Sets, Sharing</li>
+            <li data-i18n="svc1_li3">Modelo de dados e governança</li>
           </ul>
         </article>
 
-        <article class="card">
-          <h3>Automação & UX</h3>
-          <p>Processos fluindo: Flows bem desenhados, telas rápidas e experiência simples.</p>
+        <article class="card" data-animate>
+          <h3 data-i18n="svc2_title">Automação & UX</h3>
+          <p data-i18n="svc2_desc">Processos fluindo: Flows bem desenhados, telas rápidas e experiência simples.</p>
           <ul>
-            <li>Flow builder (padrão ouro)</li>
-            <li>Validações inteligentes</li>
-            <li>Componentes LWC quando necessário</li>
+            <li data-i18n="svc2_li1">Flow builder (padrão ouro)</li>
+            <li data-i18n="svc2_li2">Validações inteligentes</li>
+            <li data-i18n="svc2_li3">Componentes LWC quando necessário</li>
           </ul>
         </article>
 
-        <article class="card">
-          <h3>Integrações & Dados</h3>
-          <p>Integre sistemas com rastreabilidade, segurança e observabilidade.</p>
+        <article class="card" data-animate>
+          <h3 data-i18n="svc3_title">Integrações & Dados</h3>
+          <p data-i18n="svc3_desc">Integre sistemas com rastreabilidade, segurança e observabilidade.</p>
           <ul>
-            <li>APIs REST/SOAP, Platform Events</li>
-            <li>MuleSoft / integrações custom</li>
-            <li>Qualidade de dados e ETL</li>
+            <li data-i18n="svc3_li1">APIs REST/SOAP, Platform Events</li>
+            <li data-i18n="svc3_li2">MuleSoft / integrações custom</li>
+            <li data-i18n="svc3_li3">Qualidade de dados e ETL</li>
           </ul>
         </article>
 
-        <article class="card">
-          <h3>Sustentação & Otimização</h3>
-          <p>Melhoria contínua: performance, auditoria, backlog e SLAs claros.</p>
+        <article class="card" data-animate>
+          <h3 data-i18n="svc4_title">Sustentação & Otimização</h3>
+          <p data-i18n="svc4_desc">Melhoria contínua: performance, auditoria, backlog e SLAs claros.</p>
           <ul>
-            <li>Revisão de arquitetura</li>
-            <li>Monitoramento e correções</li>
-            <li>Roadmap trimestral</li>
+            <li data-i18n="svc4_li1">Revisão de arquitetura</li>
+            <li data-i18n="svc4_li2">Monitoramento e correções</li>
+            <li data-i18n="svc4_li3">Roadmap trimestral</li>
           </ul>
         </article>
       </div>
@@ -166,37 +181,37 @@
 
     <section id="metodo" class="section container">
       <div class="section-head">
-        <h2>Método de trabalho</h2>
-        <p>Clareza e previsibilidade — com entrega incremental e comunicação objetiva.</p>
+        <h2 data-i18n="sec_method_title">Método de trabalho</h2>
+        <p data-i18n="sec_method_desc">Clareza e previsibilidade — com entrega incremental e comunicação objetiva.</p>
       </div>
 
       <div class="steps">
-        <div class="step">
+        <div class="step" data-animate>
           <div class="n">01</div>
           <div>
-            <h3>Diagnóstico</h3>
-            <p>Entendimento do negócio, dor real, riscos, e o que gera ganho rápido.</p>
+            <h3 data-i18n="step1_title">Diagnóstico</h3>
+            <p data-i18n="step1_desc">Entendimento do negócio, dor real, riscos, e o que gera ganho rápido.</p>
           </div>
         </div>
-        <div class="step">
+        <div class="step" data-animate>
           <div class="n">02</div>
           <div>
-            <h3>Arquitetura & Backlog</h3>
-            <p>Desenho do alvo, definição de padrões, e priorização com ROI.</p>
+            <h3 data-i18n="step2_title">Arquitetura & Backlog</h3>
+            <p data-i18n="step2_desc">Desenho do alvo, definição de padrões, e priorização com ROI.</p>
           </div>
         </div>
-        <div class="step">
+        <div class="step" data-animate>
           <div class="n">03</div>
           <div>
-            <h3>Entrega incremental</h3>
-            <p>Sprints com validação do usuário, testes e documentação.</p>
+            <h3 data-i18n="step3_title">Entrega incremental</h3>
+            <p data-i18n="step3_desc">Sprints com validação do usuário, testes e documentação.</p>
           </div>
         </div>
-        <div class="step">
+        <div class="step" data-animate>
           <div class="n">04</div>
           <div>
-            <h3>Handover & Evolução</h3>
-            <p>Treinamento, governança e melhoria contínua com métricas.</p>
+            <h3 data-i18n="step4_title">Handover & Evolução</h3>
+            <p data-i18n="step4_desc">Treinamento, governança e melhoria contínua com métricas.</p>
           </div>
         </div>
       </div>
@@ -204,8 +219,8 @@
 
     <section id="contato" class="section container">
       <div class="section-head">
-        <h2>Contato (com QR Code)</h2>
-        <p>Escaneie e fale direto. Também deixamos o link por escrito para facilitar no desktop.</p>
+        <h2 data-i18n="sec_contact_title">Contato (com QR Code)</h2>
+        <p data-i18n="sec_contact_desc">Escaneie e fale direto. Também deixamos o link por escrito para facilitar no desktop.</p>
       </div>
 
       <div class="contact-grid" id="contactGrid"
@@ -213,49 +228,49 @@
            data-linkedin="https://www.linkedin.com/company/hermondata"
            data-email="hermondata@gmail.com">
 
-        <div class="contact-card">
+        <div class="contact-card" data-animate>
           <div class="contact-top">
             <div class="icon">WA</div>
             <div>
-              <h3>WhatsApp</h3>
-              <p>Resposta rápida</p>
+              <h3 data-i18n="c_wa_title">WhatsApp</h3>
+              <p data-i18n="c_wa_sub">Resposta rápida</p>
             </div>
           </div>
           <img class="qr" src="assets/qr-whatsapp.png" alt="QR code para WhatsApp" />
-          <a class="link" id="waLink" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
+          <a class="link" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="contact_wa_btn">Abrir WhatsApp</a>
         </div>
 
-        <div class="contact-card">
+        <div class="contact-card" data-animate>
           <div class="contact-top">
             <div class="icon">in</div>
             <div>
-              <h3>LinkedIn</h3>
-              <p>Empresa e cases</p>
+              <h3 data-i18n="c_li_title">LinkedIn</h3>
+              <p data-i18n="c_li_sub">Empresa e cases</p>
             </div>
           </div>
           <img class="qr" src="assets/qr-linkedin.png" alt="QR code para LinkedIn" />
-          <a class="link" id="liLink" href="#" target="_blank" rel="noopener">Visitar LinkedIn</a>
+          <a class="link" id="liLink" href="#" target="_blank" rel="noopener" data-i18n="contact_li_btn">Visitar LinkedIn</a>
         </div>
 
-        <div class="contact-card">
+        <div class="contact-card" data-animate>
           <div class="contact-top">
             <div class="icon">@</div>
             <div>
-              <h3>E-mail</h3>
-              <p>Propostas e projetos</p>
+              <h3 data-i18n="c_em_title">E-mail</h3>
+              <p data-i18n="c_em_sub">Propostas e projetos</p>
             </div>
           </div>
           <img class="qr" src="assets/qr-email.png" alt="QR code para e-mail" />
-          <a class="link" id="emLink" href="#">Enviar e-mail</a>
+          <a class="link" id="emLink" href="#" data-i18n="contact_em_btn">Enviar e-mail</a>
         </div>
       </div>
 
       <div class="footer-card">
         <div>
-          <div class="foot-title">Pronto para começar?</div>
-          <div class="foot-sub">Envie sua necessidade e retornamos com um plano claro (escopo, prazos e próximos passos).</div>
+          <div class="foot-title" data-i18n="foot_title">Pronto para começar?</div>
+          <div class="foot-sub" data-i18n="foot_sub">Envie sua necessidade e retornamos com um plano claro (escopo, prazos e próximos passos).</div>
         </div>
-        <a class="btn primary" href="#" id="ctaBtn">Falar agora</a>
+        <a class="btn primary" href="#" id="ctaBtn" data-i18n="cta_btn">Falar agora</a>
       </div>
     </section>
   </main>
@@ -263,9 +278,9 @@
   <footer class="footer container">
     <div>© <span id="year"></span> Hermon Data. Todos os direitos reservados.</div>
     <div class="footer-links">
-      <a href="#servicos">Serviços</a>
-      <a href="#metodo">Método</a>
-      <a href="#contato">Contato</a>
+      <a href="#servicos" data-i18n="nav_services">Serviços</a>
+      <a href="#metodo" data-i18n="nav_method">Método</a>
+      <a href="#contato" data-i18n="footer_contact">Contato</a>
     </div>
   </footer>
 
